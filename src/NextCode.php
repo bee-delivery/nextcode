@@ -11,8 +11,8 @@ use BeeDelivery\NextCode\src\QuatroCampos;
 
 class NextCode
 {
-    public function auth($data) {
-        return new Auth($data);
+    public function auth() {
+        return new Auth();
     }
 
     public function quatroCampos($token) {
