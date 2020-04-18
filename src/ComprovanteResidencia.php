@@ -25,7 +25,7 @@ class ComprovanteResidencia
      */
     public function comprovanteResidencia($data)
     {
-        return $this->http->post('v1.0/proof-of-residence/single-file/', ['json' => $data]);
+        return $this->http->post('https://idhomolog.nxcd.com.br/v1.0/proof-of-residence/single-file/', ['json' => $data]);
     }
 
     /**
@@ -39,7 +39,7 @@ class ComprovanteResidencia
      */
     public function comprovanteResidenciaUrl($data)
     {
-        return $this->http->post('v1.0/proof-of-residence/single-file-url/', ['json' => $data]);
+        return $this->http->post('https://idhomolog.nxcd.com.br/v1.0/proof-of-residence/single-file-url/', ['json' => $data]);
     }
 
     /**
@@ -53,7 +53,7 @@ class ComprovanteResidencia
      */
     public function comprovanteResidenciaBase64($data)
     {
-        return $this->http->post('v1.0/proof-of-residence/single-file-base64/', ['json' => $data]);
+        return $this->http->post('https://idhomolog.nxcd.com.br/v1.0/proof-of-residence/single-file-base64/', ['json' => $data]);
     }
 
     /**
@@ -75,7 +75,7 @@ class ComprovanteResidencia
      */
     public function comprovanteResidenciaDigitado($data)
     {
-        return $this->http->post('v1.0/proof-of-residence/single-file-form/', ['json' => $data]);
+        return $this->http->post('https://idhomolog.nxcd.com.br/v1.0/proof-of-residence/single-file-form/', ['json' => $data]);
     }
 
 
@@ -98,7 +98,7 @@ class ComprovanteResidencia
      */
     public function comprovanteResidenciaDigitadoUrl($data)
     {
-        return $this->http->post('v1.0/proof-of-residence/single-file-url-form/', ['json' => $data]);
+        return $this->http->post('https://idhomolog.nxcd.com.br/v1.0/proof-of-residence/single-file-url-form/', ['json' => $data]);
     }
 
     /**
@@ -120,7 +120,7 @@ class ComprovanteResidencia
      */
     public function comprovanteResidenciaDigitadoBase64($data)
     {
-        return $this->http->post('v1.0/proof-of-residence/single-file-base64-form/', ['json' => $data]);
+        return $this->http->post('https://idhomolog.nxcd.com.br/v1.0/proof-of-residence/single-file-base64-form/', ['json' => $data]);
     }
 
 }

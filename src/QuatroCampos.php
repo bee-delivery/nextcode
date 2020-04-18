@@ -27,7 +27,7 @@ class QuatroCampos
      */
     public function arquivoUnico($data)
     {
-        return $this->http->get('v1.0/id/single-file/', ['json' => $data]);
+        return $this->http->get('https://idhomolog.nxcd.com.br/v1.0/id/single-file/', ['json' => $data]);
     }
 
     /**
@@ -43,7 +43,7 @@ class QuatroCampos
      */
     public function arquivoUnicoBase64($data)
     {
-        return $this->http->get('v1.0/id/single-file-base64/', ['json' => $data]);
+        return $this->http->get('https://idhomolog.nxcd.com.br/v1.0/id/single-file-base64/', ['json' => $data]);
     }
 
     /**
@@ -59,7 +59,7 @@ class QuatroCampos
      */
     public function arquivoUnicoUrl($data)
     {
-        return $this->http->get('v1.0/id/single-file-base64/', ['json' => $data]);
+        return $this->http->get('https://idhomolog.nxcd.com.br/v1.0/id/single-file-url/', ['json' => $data]);
     }
 
     /**
@@ -76,7 +76,7 @@ class QuatroCampos
      */
     public function doisArquivos($data)
     {
-        return $this->http->get('v1.0/id/two-files/', ['json' => $data]);
+        return $this->http->get('https://idhomolog.nxcd.com.br/v1.0/id/two-files/', ['json' => $data]);
     }
 
     /**
@@ -93,7 +93,7 @@ class QuatroCampos
      */
     public function doisArquivosBase64($data)
     {
-        return $this->http->get('v1.0/id/two-files-base64/', ['json' => $data]);
+        return $this->http->get('https://idhomolog.nxcd.com.br/v1.0/id/two-files-base64/', ['json' => $data]);
     }
 
     /**
@@ -110,6 +110,6 @@ class QuatroCampos
      */
     public function doisArquivosUrl($data)
     {
-        return $this->http->get('v1.0/id/two-files-url/', ['json' => $data]);
+        return $this->http->get('https://idhomolog.nxcd.com.br/v1.0/id/two-files-url/', ['json' => $data]);
     }
 }

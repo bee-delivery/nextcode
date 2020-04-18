@@ -23,7 +23,7 @@ class BackgroundCheck
      */
     public function backgroundcheckImagem($data)
     {
-        return $this->http->post('api/background-check/one-file/', ['json' => $data]);
+        return $this->http->post('https://idneowaycheck.nxcd.com.br/api/background-check/one-file/', ['json' => $data]);
     }
 
     /**
@@ -36,7 +36,7 @@ class BackgroundCheck
      */
     public function backgroundcheckImagemUrl($data)
     {
-        return $this->http->post('api/background-check/one-file-url/', ['json' => $data]);
+        return $this->http->post('https://idneowaycheck.nxcd.com.br/api/background-check/one-file-url/', ['json' => $data]);
     }
 
     /**
@@ -48,7 +48,7 @@ class BackgroundCheck
      */
     public function backgroundcheckCpf($cpf)
     {
-        return $this->http->get('v1.0/background-check/by-cpf/'.$cpf);
+        return $this->http->get('https://idhomolog.nxcd.com.br/v1.0/background-check/by-cpf/'.$cpf);
     }
 
     /**
@@ -60,7 +60,7 @@ class BackgroundCheck
      */
     public function backgroundcheckCnpj($cnpj)
     {
-        return $this->http->get('v1.0/background-check/by-cnpj/'.$cnpj);
+        return $this->http->get('https://idhomolog.nxcd.com.br/v1.0/background-check/by-cnpj/'.$cnpj);
     }
 
 }

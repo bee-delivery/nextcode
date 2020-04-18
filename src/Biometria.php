@@ -25,7 +25,7 @@ class Biometria
      */
     public function comparacaoBiometrica($data)
     {
-        return $this->http->post('v1.0/bio/face-compare/', ['json' => $data]);
+        return $this->http->post('https://idhomolog.nxcd.com.br/v1.0/bio/face-compare/', ['json' => $data]);
     }
 
     /**
@@ -39,7 +39,7 @@ class Biometria
      */
     public function comparacaoBiometricaBase64($data)
     {
-        return $this->http->post('v1.0/bio/face-compare-base64/', ['json' => $data]);
+        return $this->http->post('https://idhomolog.nxcd.com.br/v1.0/bio/face-compare-base64/', ['json' => $data]);
     }
 
     /**
@@ -53,7 +53,7 @@ class Biometria
      */
     public function comparacaoBiometricaUrl($data)
     {
-        return $this->http->post('v1.0/bio/face-compare-url/', ['json' => $data]);
+        return $this->http->post('https://idhomolog.nxcd.com.br/v1.0/bio/face-compare-url/', ['json' => $data]);
     }
 
 
@@ -68,7 +68,7 @@ class Biometria
      */
     public function comparacaoBiometricaV2($data)
     {
-        return $this->http->post('v1.0/bio/new-face-compare/', ['json' => $data]);
+        return $this->http->post('https://idhomolog.nxcd.com.br/v1.0/bio/new-face-compare/', ['json' => $data]);
     }
 
     /**
@@ -82,7 +82,7 @@ class Biometria
      */
     public function comparacaoBiometricaBase64V2($data)
     {
-        return $this->http->post('v1.0/bio/new-face-compare-base64/', ['json' => $data]);
+        return $this->http->post('https://idhomolog.nxcd.com.br/v1.0/bio/new-face-compare-base64/', ['json' => $data]);
     }
 
     /**
@@ -96,7 +96,7 @@ class Biometria
      */
     public function comparacaoBiometricaUrlV2($data)
     {
-        return $this->http->post('v1.0/bio/new-face-compare-url/', ['json' => $data]);
+        return $this->http->post('https://idhomolog.nxcd.com.br/v1.0/bio/new-face-compare-url/', ['json' => $data]);
     }
 
     /**
@@ -112,7 +112,7 @@ class Biometria
      */
     public function comparacaoBiometricaDatavalid($data)
     {
-        return $this->http->post('v1.0/bio/compare-datavalid/', ['json' => $data]);
+        return $this->http->post('https://idhomolog.nxcd.com.br/v1.0/bio/compare-datavalid/', ['json' => $data]);
     }
 
     /**
@@ -128,7 +128,7 @@ class Biometria
      */
     public function comparacaoBiometricaDatavalidBase64($data)
     {
-        return $this->http->post('v1.0/bio/compare-datavalid-base64/', ['json' => $data]);
+        return $this->http->post('https://idhomolog.nxcd.com.br/v1.0/bio/compare-datavalid-base64/', ['json' => $data]);
     }
 
 
@@ -145,6 +145,6 @@ class Biometria
      */
     public function comparacaoBiometricaDatavalidUrl($data)
     {
-        return $this->http->post('v1.0/bio/compare-datavalid-url/', ['json' => $data]);
+        return $this->http->post('https://idhomolog.nxcd.com.br/v1.0/bio/compare-datavalid-url/', ['json' => $data]);
     }
 }
