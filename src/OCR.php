@@ -27,7 +27,7 @@ class OCR
      */
     public function generica($data)
     {
-        return $this->http->post('https://idhomolog.nxcd.com.br/v1.0/id/extract-all-single-file/', ['json' => $data]);
+        return $this->http->post('https://id.nxcd.com.br/v1.0/id/extract-all-single-file/', ['json' => $data]);
     }
 
     /**
@@ -43,7 +43,7 @@ class OCR
      */
     public function genericaBase64($data)
     {
-        return $this->http->post('https://idhomolog.nxcd.com.br/v1.0/id/extract-all-single-file-base64/', ['json' => $data]);
+        return $this->http->post('https://id.nxcd.com.br/v1.0/id/extract-all-single-file-base64/', ['json' => $data]);
     }
 
     /**
@@ -59,7 +59,7 @@ class OCR
      */
     public function genericaUrl($data)
     {
-        return $this->http->post('https://idhomolog.nxcd.com.br/v1.0/id/extract-all-single-file-url/', ['json' => $data]);
+        return $this->http->post('https://id.nxcd.com.br/v1.0/id/extract-all-single-file-url/', ['json' => $data]);
     }
 
     /**
@@ -76,7 +76,7 @@ class OCR
      */
     public function genericaDoisArquivos($data)
     {
-        return $this->http->post('https://idhomolog.nxcd.com.br/v1.0/id/extract-all-two-files/', ['json' => $data]);
+        return $this->http->post('https://id.nxcd.com.br/v1.0/id/extract-all-two-files/', ['json' => $data]);
     }
 
     /**
@@ -93,7 +93,7 @@ class OCR
      */
     public function genericaDoisArquivosBase64($data)
     {
-        return $this->http->post('https://idhomolog.nxcd.com.br/v1.0/id/extract-all-two-files-base64/', ['json' => $data]);
+        return $this->http->post('https://id.nxcd.com.br/v1.0/id/extract-all-two-files-base64/', ['json' => $data]);
     }
 
     /**
@@ -110,7 +110,7 @@ class OCR
      */
     public function genericaDoisArquivosUrl($data)
     {
-        return $this->http->post('https://idhomolog.nxcd.com.br/v1.0/id/extract-all-two-files-url/', ['json' => $data]);
+        return $this->http->post('https://id.nxcd.com.br/v1.0/id/extract-all-two-files-url/', ['json' => $data]);
     }
 
 }

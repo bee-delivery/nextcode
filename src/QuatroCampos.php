@@ -27,7 +27,7 @@ class QuatroCampos
      */
     public function arquivoUnico($data)
     {
-        return $this->http->get('https://idhomolog.nxcd.com.br/v1.0/id/single-file/', ['json' => $data]);
+        return $this->http->get('https://id.nxcd.com.br/v1.0/id/single-file/', ['json' => $data]);
     }
 
     /**
@@ -43,7 +43,7 @@ class QuatroCampos
      */
     public function arquivoUnicoBase64($data)
     {
-        return $this->http->get('https://idhomolog.nxcd.com.br/v1.0/id/single-file-base64/', ['json' => $data]);
+        return $this->http->get('https://id.nxcd.com.br/v1.0/id/single-file-base64/', ['json' => $data]);
     }
 
     /**
@@ -51,7 +51,7 @@ class QuatroCampos
      * Este endpoint aceita documentos com CPF e face, que sejam válidos, tais como RG, documentos de ordem, militares, etc.
      * A validação com bases públicas se dá através do nome, nome da mãe, data de nascimento e CPF.
      *
-     * @see POST https://idhomolog.nxcd.com.br/v1.0/id/single-file-url/
+     * @see POST https://id.nxcd.com.br/v1.0/id/single-file-url/
      * @param Url url - Url da imagem ou PDF do documento de identificação
      * @param String cpf - CPF do portador caso documento seja um RG sem CPF preenchido (Opcional)
      * @param Boolean prepareForDatavalid - Solicita tratamento especial da face, retorna parâmetro face.croppedFaceBase64 preparado para ser enviado ao Datavalid da Serpro (Opcional, default false)
@@ -59,7 +59,7 @@ class QuatroCampos
      */
     public function arquivoUnicoUrl($data)
     {
-        return $this->http->get('https://idhomolog.nxcd.com.br/v1.0/id/single-file-url/', ['json' => $data]);
+        return $this->http->get('https://id.nxcd.com.br/v1.0/id/single-file-url/', ['json' => $data]);
     }
 
     /**
@@ -67,7 +67,7 @@ class QuatroCampos
      * Este endpoint aceita documentos com CPF e face, que sejam válidos, tais como RG, documentos de ordem, militares, etc.
      * A validação com bases públicas se dá através do nome, nome da mãe, data de nascimento e CPF.
      *
-     * @see POST https://idhomolog.nxcd.com.br/v1.0/id/two-files/
+     * @see POST https://id.nxcd.com.br/v1.0/id/two-files/
      * @param File file1 - Imagem ou PDF do documento de identificação, pode ser a frente ou o verso
      * @param File file2 - Imagem ou PDF do documento de identificação, pode ser a frente ou o verso
      * @param String cpf - CPF do portador caso documento seja um RG sem CPF preenchido (Opcional)
@@ -76,7 +76,7 @@ class QuatroCampos
      */
     public function doisArquivos($data)
     {
-        return $this->http->get('https://idhomolog.nxcd.com.br/v1.0/id/two-files/', ['json' => $data]);
+        return $this->http->get('https://id.nxcd.com.br/v1.0/id/two-files/', ['json' => $data]);
     }
 
     /**
@@ -84,7 +84,7 @@ class QuatroCampos
      * Este endpoint aceita documentos com CPF e face, que sejam válidos, tais como RG, documentos de ordem, militares, etc.
      * A validação com bases públicas se dá através do nome, nome da mãe, data de nascimento e CPF.
      *
-     * @see POST POST https://idhomolog.nxcd.com.br/v1.0/id/two-files-base64/
+     * @see POST POST https://id.nxcd.com.br/v1.0/id/two-files-base64/
      * @param File file1 - Imagem ou PDF do documento de identificação, pode ser a frente ou o verso
      * @param File file2 - Imagem ou PDF do documento de identificação, pode ser a frente ou o verso
      * @param String cpf - CPF do portador caso documento seja um RG sem CPF preenchido (Opcional)
@@ -93,7 +93,7 @@ class QuatroCampos
      */
     public function doisArquivosBase64($data)
     {
-        return $this->http->get('https://idhomolog.nxcd.com.br/v1.0/id/two-files-base64/', ['json' => $data]);
+        return $this->http->get('https://id.nxcd.com.br/v1.0/id/two-files-base64/', ['json' => $data]);
     }
 
     /**
@@ -101,7 +101,7 @@ class QuatroCampos
      * Este endpoint aceita documentos com CPF e face, que sejam válidos, tais como RG, documentos de ordem, militares, etc.
      * A validação com bases públicas se dá através do nome, nome da mãe, data de nascimento e CPF.
      *
-     * @see POST POST https://idhomolog.nxcd.com.br/v1.0/id/two-files-base64/
+     * @see POST POST https://id.nxcd.com.br/v1.0/id/two-files-base64/
      * @param Url url1 - Url da Imagem ou PDF do documento de identificação, pode ser a frente ou o verso
      * @param Url url2 - Url da Imagem ou PDF do documento de identificação, pode ser a frente ou o verso
      * @param String cpf - CPF do portador caso documento seja um RG sem CPF preenchido (Opcional)
@@ -110,6 +110,6 @@ class QuatroCampos
      */
     public function doisArquivosUrl($data)
     {
-        return $this->http->get('https://idhomolog.nxcd.com.br/v1.0/id/two-files-url/', ['json' => $data]);
+        return $this->http->get('https://id.nxcd.com.br/v1.0/id/two-files-url/', ['json' => $data]);
     }
 }

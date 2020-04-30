@@ -27,7 +27,7 @@ class Auth
      */
     public function login($data)
     {
-        return $this->http->post('https://authhomolog.nxcd.com.br/v1.0/login/', ['json' => $data]);
+        return $this->http->post('https://auth.nxcd.com.br/v1.0/login/', ['json' => $data]);
     }
 
 }

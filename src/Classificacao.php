@@ -34,7 +34,7 @@ class Classificacao
      */
     public function classificacaoDocumentos($data)
     {
-        return $this->http->post('https://idhomolog.nxcd.com.br/v1.0/classifier/single-file/' , ['json' => $data]);
+        return $this->http->post('https://id.nxcd.com.br/v1.0/classifier/single-file/' , ['json' => $data]);
     }
 
     /**
@@ -58,7 +58,7 @@ class Classificacao
      */
     public function classificacaoDocumentosBase64($data)
     {
-        return $this->http->post('https://idhomolog.nxcd.com.br/v1.0/classifier/single-file-base64/' , ['json' => $data]);
+        return $this->http->post('https://id.nxcd.com.br/v1.0/classifier/single-file-base64/' , ['json' => $data]);
     }
 
     /**
@@ -82,7 +82,7 @@ class Classificacao
      */
     public function classificacaoDocumentosUrl($data)
     {
-        return $this->http->post('https://idhomolog.nxcd.com.br/v1.0/classifier/single-file-url/' , ['json' => $data]);
+        return $this->http->post('https://id.nxcd.com.br/v1.0/classifier/single-file-url/' , ['json' => $data]);
     }
 
 }

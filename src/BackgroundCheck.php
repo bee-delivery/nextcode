@@ -48,7 +48,7 @@ class BackgroundCheck
      */
     public function backgroundcheckCpf($cpf)
     {
-        return $this->http->get('https://idhomolog.nxcd.com.br/v1.0/background-check/by-cpf/'.$cpf);
+        return $this->http->get('https://id.nxcd.com.br/v1.0/background-check/by-cpf/'.$cpf);
     }
 
     /**
@@ -60,7 +60,7 @@ class BackgroundCheck
      */
     public function backgroundcheckCnpj($cnpj)
     {
-        return $this->http->get('https://idhomolog.nxcd.com.br/v1.0/background-check/by-cnpj/'.$cnpj);
+        return $this->http->get('https://id.nxcd.com.br/v1.0/background-check/by-cnpj/'.$cnpj);
     }
 
 }
