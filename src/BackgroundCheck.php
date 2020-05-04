@@ -63,4 +63,19 @@ class BackgroundCheck
         return $this->http->get('https://id.nxcd.com.br/v1.0/background-check/by-cnpj/'.$cnpj);
     }
 
+    /**
+     * Este endpoint serve para buscar processos nos tribunais brasileiros a partir de um CPF.
+     * Serão buscados processos onde a pessoa solicitada é a parte passiva (réu).
+     *
+     * @see https://docs.nxcd.com.br/#processos-pf
+     * @param String cpf - CPF da pessoa que você dejesa buscar os processos (obrigatório)
+     * @param Boolean getDetail - Quando "true" irá retornar informações sobre os processos, quando "false" retorna somente os contadores (opcional, default false)
+     * @param Array filters - Array de termos (string) para serem utilizados como filtro. Quando utilizado mais de um termo, será aplicada condicional OR (opcional)
+     * @return Json
+     */
+
+    public function processosPF($data)
+    {
+        return $this->http->post('https://id.nxcd.com.br/v1.0/background-check/processos-pf/', ['json' => $data]);
+    }
 }
